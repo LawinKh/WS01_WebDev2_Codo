@@ -2,36 +2,68 @@
    CSS Styles for Workshop 01
    ================================= */
 
-/* TODO Task 2: Add your general styles here */
-
 /* Reset and Base Styles */
+/* box-sizing border box makes width and height include padding and borders */
 * {
-    /* Add your reset styles here (margin, padding, box-sizing) */
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    /* Add body styles:  font-family, background-color, color, etc. */
-
+    /* Set a light background and readable font for the page. */
+    background-color: #f8f5f0;
+    color: #263238;
+    font-family: Georgia, "Times New Roman", serif;
+    margin: 0;
+    padding: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.65;
 }
 
-/* TODO Task 2: Style your headings */
-h1 {
-    
-}
-
+/* Collective heading styles h1 and h2 */
+h1,
 h2 {
-    
+    color: #264653;
+    font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
 }
 
-/* TODO Task 2: Style your paragraphs */
+/* h1 specific styling */
+h1 {
+    font-size: 2.6rem;
+    margin-bottom: 0.75rem;
+}
+
+/* h2 specific styling */
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+/* Paragraph styles */
 p {
-    
+    color: #455a64;
+    line-height: 1.7;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto 1.25rem;
 }
 
-/* TODO Task 2: Style your images */
+/* styling used for images */
 img {
-    
+    display: block;
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 1rem;
+    border: 1px solid #263238;
+    border-radius: 12px;
+}
+
+/* centered the caption of the hero image */
+figcaption {
+    text-align: center;
 }
 
 /* TODO Task 3: Navigation Styles */
