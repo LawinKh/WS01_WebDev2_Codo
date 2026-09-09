@@ -32,6 +32,7 @@ h2 {
 /* h1 specific styling */
 h1 {
     font-size: 2.6rem;
+    margin-top: 1rem;
     margin-bottom: 0.75rem;
 }
 
@@ -67,24 +68,36 @@ figcaption {
 }
 
 /* TODO Task 3: Navigation Styles */
+
+/* Give the nav bar a background and some padding */
 nav {
-    
+    background-color: #2B2B2B;
+    padding: 1rem;
 }
 
+/* Remove bullets and put the links in a row */
 nav ul {
-    /* Remove bullets and style the list */
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
+/* Add a little space between each item */
 nav li {
-    /* Display items horizontally */
+    margin-right: 1rem;
 }
 
+/* Basic link styling */
 nav a {
-    /* Style the links */
+    color: #f8f5f0;
+    text-decoration: none;
+    padding: 0.5rem;
 }
 
+/* Highlight the link when hovered */
 nav a:hover {
-    /* Add hover effect */
+    background-color: #7A8B6F;
 }
 
 /* Main Content Styles */
@@ -98,42 +111,72 @@ section {
 
 /* TODO Task 4: Form Styles */
 form {
-    
+    max-width: 600px;
+    margin: 2rem auto;
 }
 
 label {
-    
+    display: block;
+    margin: 1rem 0 0.4rem;
+    color: #263238;
+    font-weight: bold;
 }
 
 input,
+select,
 textarea {
     /* Style form inputs */
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #263238;
+    margin-bottom: 1rem;
 }
 
 button,
 input[type="submit"] {
     /* Style the submit button */
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #263238;
+    color: #f8f5f0;
+    cursor: pointer;
 }
 
 button:hover,
-input[type="submit"]: hover {
+input[type="submit"]:hover {
     /* Add hover effect for button */
+    background-color: #7a8b6f;
 }
 
 /* Footer Styles */
 footer {
-    
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background-color: #2b2b2b;
+    color: #f8f5f0;
+    text-align: center;
+}
+
+footer p {
+    width: auto;
+    margin-bottom: 0.75rem;
+    color: #f8f5f0;
+}
+
+.social-links a {
+    margin: 0 0.5rem;
+    color: #f8f5f0;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #7a8b6f;
 }
 
 /* TODO Task 5: Media Queries for Responsive Design */
-/* Tablet styles (optional) */
-@media (max-width: 768px) {
-    /* Add your tablet/mobile styles here */
-    
-}
+/* Tablet and mobile styles */
+@media (max-width: 768px) 
 
-/* Mobile styles */
-@media (max-width:  480px) {
-    /* Add your mobile-specific styles here */
-    
-}
+/* Small mobile devices */
+@media (max-width: 480px) 
+   
