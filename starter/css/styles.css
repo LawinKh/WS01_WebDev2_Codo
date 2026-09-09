@@ -176,7 +176,80 @@ footer p {
 /* TODO Task 5: Media Queries for Responsive Design */
 /* Tablet and mobile styles */
 @media (max-width: 768px) 
+{
+    body {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    nav {
+        padding: 0.75rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 0.75rem;
+    }
+
+    nav li {
+        margin: 0.25rem 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.4rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    form {
+        width: 100%;
+        margin: 1.5rem auto;
+    }
+
+    footer {
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+}
 
 /* Small mobile devices */
 @media (max-width: 480px) 
-   
+   {
+    body {
+        padding: 0.75rem;
+    }
+
+    nav {
+        padding: 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    button,
+    input[type="submit"] {
+        width: 100%;
+    }
+}
